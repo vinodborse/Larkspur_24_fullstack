@@ -1,0 +1,79 @@
+html {
+    scroll-behavior: smooth;
+}
+#s1 {
+    color: yellow;
+}
+
+#s2 {
+
+    color: blue;
+}
+
+h1 {
+    color: red;
+
+    /* border-top-style: solid; */
+    /* border-right-style: double;
+    border-bottom-style: dashed;
+    border-left-style: dotted; */
+
+    /* border-top-color: blue; */
+    /* border-right-color: blue;
+    border-bottom-color: blue;
+    border-left-color: blue; */
+
+    /* border-top-width: 5px; */
+    /* border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px; */
+
+    /* border-top: 10px solid salmon ;
+    border-bottom: 10px solid salmon ;
+    border-left: 10px solid salmon ;
+    border-right: 10px solid salmon ; */
+
+    border: purple 5px solid;
+    border-radius: 5px;
+
+    background-color: aquamarine;
+
+}
+
+p {
+    color: red;
+    border: solid;
+    /* background-color: pink; */
+    
+}
+
+p {
+    background-image: url(./mn.jpg) ;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: rgb(246, 176, 176);
+}
+
+
+img {
+    height: 100px;
+    border-radius: 60%;
+}
+
+
+#p1 {
+    background-color: aqua;
+}
+
+#p2 {
+    background-color: wheat;
+}
+
+#p3 {
+    background-color: cadetblue;
+}
