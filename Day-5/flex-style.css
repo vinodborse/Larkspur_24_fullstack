@@ -1,0 +1,23 @@
+#p-div {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#c-div-1 {
+    width: 500px;
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#c-div-2 {
+
+    /* background-color: blueviolet; */
+}
+
+
+h1 {
+    /* border: solid 3px; */
+    /* background-color: yellowgreen; */
+}

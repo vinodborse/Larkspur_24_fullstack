@@ -1,0 +1,36 @@
+h1 {
+    color: rgb(56, 7, 7);
+    border: solid 5px black;
+    background-color: palevioletred;
+    width: 100px;
+    /* height: 200px; */
+    
+    /* margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    margin-right: 10px; */
+   
+    /* margin: 100px; */
+
+    /* padding-left: 10px;
+    padding-top: 10px; */
+
+    /* padding: 10px; */
+}
+
+
+
+div {
+    background-color: aqua;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* 
+#vin {
+    margin-left: 10px;
+}
+
+#dn {
+    margin-left: 500px;
+} */
