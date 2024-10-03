@@ -1,0 +1,29 @@
+#p-div {
+    background-color: thistle;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    /* grid-column-gap: 100px;
+    grid-row-gap: 300px;
+     */
+    grid-template-rows: 100px ;
+    justify-content: space-between;
+    height: 100vh;
+
+}
+
+
+#a1 {
+    background-color: aqua;
+}
+
+#a2 {
+    background-color: yellowgreen;
+}
+
+#a3 {
+    background-color: turquoise;
+}
+
+#a4 {
+    background-color: burlywood;
+}
