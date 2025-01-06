@@ -1,3 +1,8 @@
+https://dev.mysql.com/downloads/
+
+https://www.youtube.com/watch?v=hiS_mWZmmI0&ab_channel=AmitThinks
+
+
 CREATE DATABASE <database_name>;
 SHOW DATABASES;
 DROP DATABASE <database_name>;
