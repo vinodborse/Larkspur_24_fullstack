@@ -1,0 +1,6 @@
+CREATE DATABASE <database_name>;
+SHOW DATABASES;
+DROP DATABASE <database_name>;
+USE <database_name>;
+
+CREATE TABLE <table_name>(<column_name> <column_datatype>, ...., ....);
