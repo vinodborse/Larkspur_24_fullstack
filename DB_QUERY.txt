@@ -9,3 +9,36 @@ DROP DATABASE <database_name>;
 USE <database_name>;
 
 CREATE TABLE <table_name>(<column_name> <column_datatype>, ...., ....);
+
+SELECT * FROM <table_name>;
+
+ALTER TABLE <table_name> ADD <new_column_name> <column_datatype>;
+ALTER TABLE <table_name> DROP <column_name>;
+ALTER TABLE <table_name> RENAME COLUMNE <old_column_name> TO <new_column_name>;
+ALTER TABLE <table_name> MODIFY <column_name> <updated_data_type>;
+
+
+DROP TABLE <table_name>;
+TRUNCATE TABLE <table_name>;
+
+INSERT INTO <table_name>(<column_name>, ....) VALUE (<column_value>, ....);
+
+
+------
+
+UNIQUE
+NOT NULL
+
+PRIMARY KEY -> UNIQUE + NOT NULL
+
+AUTO_INCREMANT
+DEFAULT <default_value>;
+
+
+CREATE TABLE <table_name>(<column_name> <column_datatype> <...>, ...., ....);
+
+
+
+
+
+
