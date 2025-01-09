@@ -21,7 +21,7 @@ ALTER TABLE <table_name> MODIFY <column_name> <updated_data_type>;
 DROP TABLE <table_name>;
 TRUNCATE TABLE <table_name>;
 
-INSERT INTO <table_name>(<column_name>, ....) VALUE (<column_value>, ....);
+INSERT INTO <table_name>(<column_name>, ....) VALUES (<column_value>, ....);
 
 
 ------
@@ -33,12 +33,87 @@ PRIMARY KEY -> UNIQUE + NOT NULL
 
 AUTO_INCREMANT
 DEFAULT <default_value>;
-
+FOREIGN KEY(<column_name>) REFERENCES <parent_table_name> <parent_primary_key>
 
 CREATE TABLE <table_name>(<column_name> <column_datatype> <...>, ...., ....);
 
 
+UPDATE <table_name> SET <columna_name> = <new_value> WHERE <condition>;
 
+DELETE FROM <table_name> WHERE <condition>;
+
+SELECT * FROM <table_name>;
+SELECT <column_name>, ...,...,.. FROM <table_name>;
+
+SELECT name FROM student;
+
+
+AND
+OR
+IN
+
+MIN
+MAX
+ADD
+AVG
+
+
+
+---------------------------------------------------
+
+
+CREATE TABLE student(rollno int PRIMARY KEY, name varchar(20), address varchar(20));
+
+-- FOREIGN KEY (<column_name>) REFERENCES <parent_table_name>(<parent_table_primary_key>); 
+
+CREATE TABLE marks(
+					marathi int, 
+                    math int, 
+                    rn int,
+                    FOREIGN KEY (rn) REFERENCES student(rollno)); 
+SELECT * FROM student;
+SELECT * FROM marks;
+
+INSERT INTO marks(marathi, math, rn) VALUES (1, 12, 5);
+
+-- SELECT <column_name>, ...,...,.. FROM <table_name>;
+
+SELECT * FROM student;
+SELECT name, rollno FROM student;
+
+INSERT INTO student VALUE (4, 'Anarkali', 'Salim ki gali');
+
+-- UPDATE <table_name> SET <columna_name> = <new_value> WHERE <condition>;
+
+UPDATE student SET city = 'Mumbai' WHERE city = 'Pune';
+
+-- DELETE FROM <table_name> WHERE <condition>;
+
+DELETE FROM student WHERE city = 'Mumbai';
+
+DELETE FROM marks WHERE rn = 3;
+SELECT * FROM student;
+
+SELECT * FROM student WHERE rollno  IN (1, 5, 12);
+
+SELECT * FROM student WHERE city = 'Dhule' OR name = 'Vinod';
+
+SELECT * FROM student;
+
+INSERT INTO student VALUES (2, 'Don', 'Pune'), (3, 'Pappu', 'Mumbai'), (4, 'Aliya', 'Mumbai'), (5, 'Salmon', 'Delhi');
+
+
+SELECT * FROM marks;
+
+SELECT AVG(marathi) FROM marks;
+
+
+SELECT * FROM student;
+SELECT rollno, name FROM student WHERE name = 'salmon';
+SELECT math, marathi FROM marks WHERE rn = 5;
+
+
+if(.. || ..)
 
 
 
