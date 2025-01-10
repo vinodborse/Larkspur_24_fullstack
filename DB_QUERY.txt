@@ -57,6 +57,9 @@ MAX
 ADD
 AVG
 
+LIMIT <count>;
+
+ORDER BY <column_name> ASC|DESC;
 
 
 ---------------------------------------------------
@@ -114,6 +117,27 @@ SELECT math, marathi FROM marks WHERE rn = 5;
 
 
 if(.. || ..)
+
+java 8 1.8
+
+java 17
+
+STS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
