@@ -6,17 +6,26 @@
   <display-name>Archetype Created Web Application</display-name>
   
   <welcome-file-list>
+	  <welcome-file>sample.jsp</welcome-file>
 	  <welcome-file>index.html</welcome-file>
   </welcome-file-list>
   
   <servlet>
-	  <servlet-name>usr</servlet-name>
+	  <servlet-name>user</servlet-name>
 	  <servlet-class>com.ts.User</servlet-class>
+  </servlet>
+  <servlet>
+	  <servlet-name>student</servlet-name>
+	  <servlet-class>com.ts.Student</servlet-class>
   </servlet>
   
   <servlet-mapping>
-	  <servlet-name>usr</servlet-name>
+	  <servlet-name>user</servlet-name>
 	  <url-pattern>/details</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+		<servlet-name>student</servlet-name>
+	  <url-pattern>/std</url-pattern>
   </servlet-mapping>
   
 </web-app>
