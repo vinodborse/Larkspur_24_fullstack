@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+	<!-- Student std = new Student(); -->
+	
+	<bean class="com.ts.Student" name="st"></bean>
+	<bean class="com.ts.Teacher" name="tch"></bean>
+
+	<bean class="com.ts.Temp" name = "tmp"> </bean>
+
+	<bean class="com.ts.Sample" name="smp"></bean>
+
+</beans>
