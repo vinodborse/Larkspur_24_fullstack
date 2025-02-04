@@ -3,35 +3,24 @@ package com.ts;
 
 public class Student {
 
-	private int rollno;
-	private String name;
-	private String address;
-	public int getRollno() {
-		return rollno;
-	}
-	public void setRollno(int rollno) {
-		this.rollno = rollno;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public String getAddress() {
-		return address;
-	}
-	public void setAddress(String address) {
-		this.address = address;
-	}
+	private Batch batch;
 	
-	public Student() {}
+	public Batch getBatch() {
+		return batch;
+	}
+	public void setBatch(Batch batch) {
+		this.batch = batch;
+	}
+
+
+	public Student() {} 
 	
-	public Student(int rollno, String name, String address) {
-	
-		this.rollno = rollno;
-		this.name = name;
-		this.address = address;
+	public Student(Batch batch) {
+		this.batch = batch;
+	}
+	public void data() {
+		System.out.println("We are in student's method");
+		batch.batchName();
 	}
 	
 	
