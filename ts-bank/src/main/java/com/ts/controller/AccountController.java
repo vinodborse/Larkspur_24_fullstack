@@ -1,8 +1,9 @@
 package com.ts.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import com.ts.service.AccountService;
 
 @RestController
 @RequestMapping("/api/account")
+@CrossOrigin("*")
 public class AccountController {
 	@Autowired
 	AccountService accountService;
@@ -38,5 +40,9 @@ public class AccountController {
 	//deleteAccount
 	
 	//checkBalance
+	@GetMapping("/check-balance/{accNo}")
+	public Account checkBalance(@PathVariable("accNo") int accNo) {
+		return accountService.checkBalance(accNo);
+	}
 	
 }

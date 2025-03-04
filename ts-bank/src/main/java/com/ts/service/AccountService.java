@@ -50,4 +50,15 @@ public class AccountService {
 		
 	}
 
+	public Account checkBalance(int accNo) {
+		Optional<Account>  acc = accountRepository.findByAccNumber(accNo);
+		
+		if(acc.isPresent()) {
+			return acc.get();
+		} else {
+			return new Account();
+		}
+		
+	}
+
 }
